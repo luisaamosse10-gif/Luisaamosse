@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website educativo sobre discriminação e preconceito no ambiente escolar.">
+  <title>Uma Escola Sem Preconceito</title>
+  <style>
+    :root {
+      --navy: #17324d;
+      --blue: #2563a6;
+      --sky: #eaf4ff;
+      --gold: #f4bd50;
+      --ink: #243447;
+      --muted: #5d6b78;
+      --white: #ffffff;
+      --paper: #f7f9fc;
+      --border: #dce5ee;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    header {
+      color: var(--white);
+      background: linear-gradient(135deg, #17324d, #2563a6);
+      padding: 22px 6%;
+    }
+    .topbar {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 68px 0 58px;
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 35px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: #ffda8a;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .82rem;
+    }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.7rem); line-height: 1.1; margin: 12px 0 18px; }
+    .hero p { max-width: 680px; font-size: 1.12rem; color: #edf5ff; }
+    .hero-art {
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 24px;
+      font-size: 5.5rem;
+    }
+    .tagline {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      color: var(--navy);
+      background: var(--gold);
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    main { max-width: 1000px; margin: 0 auto; padding: 30px 22px 70px; }
+    section {
+      background: var(--white);
+      margin: 22px 0;
+      padding: 28px clamp(20px, 4vw, 38px);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(23,50,77,.045);
+      scroll-margin-top: 20px;
+    }
+    h2 { color: var(--navy); margin-top: 0; font-size: 1.65rem; }
+    h3 { color: var(--blue); margin-bottom: 6px; }
+    p { margin-top: 8px; }
+    .intro-note {
+      padding: 16px 18px;
+      background: var(--sky);
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .item {
+      padding: 17px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fbfdff;
+    }
+    .item h3 { margin-top: 0; }
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+    .quote {
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--navy);
+      background: #fff6df;
+      border-radius: 14px;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    footer {
+      padding: 28px 20px;
+      text-align: center;
+      color: #eaf4ff;
+      background: var(--navy);
+    }
+    footer p { margin: 4px; }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    @media (max-width: 720px) {
+      .hero { grid-template-columns: 1fr; padding: 45px 0; }
+      .hero-art { min-height: 140px; font-size: 4rem; }
+      .grid { grid-template-columns: 1fr; }
+      .topbar { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">📘 Escola para Todos</div>
+      <nav aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#introducao">Introdução</a>
+        <a href="#objetivos">Objectivos</a>
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#conclusao">Conclusão</a>
+      </nav>
+    </div>
+    <div class="hero" id="inicio">
+      <div>
+        <div class="eyebrow">Respeito • Igualdade • Inclusão</div>
+        <h1>Discriminação e preconceito no ambiente escolar</h1>
+        <p>Conhecer o problema é o primeiro passo para construir uma escola onde cada aluno seja respeitado, valorizado e tenha oportunidades de aprender.</p>
+        <span class="tagline">Uma escola sem preconceito começa connosco.</span>
+      </div>
+      <div class="hero-art" role="img" aria-label="Símbolo de união entre estudantes">🤝📚</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="introducao">
+      <h2>1. Introdução</h2>
+      <p>A escola é um espaço de aprendizagem, convivência e formação de cidadãos. Nela encontramos alunos com diferentes culturas, religiões, condições económicas, características físicas e formas de pensar.</p>
+      <p>Entretanto, alguns estudantes enfrentam discriminação e preconceito por serem diferentes dos outros. Essas atitudes podem provocar sofrimento, exclusão e dificuldades na aprendizagem.</p>
+      <p>Por isso, é importante promover uma escola onde todos sejam respeitados e tenham as mesmas oportunidades.</p>
+      <div class="intro-note"><strong>Mensagem principal:</strong> as diferenças fazem parte da sociedade e devem ser respeitadas. Nenhum aluno deve ser excluído ou humilhado por ser quem é.</div>
+    </section>
+
+    <section id="objetivos">
+      <h2>2. Objectivos</h2>
+      <h3>Objectivo geral</h3>
+      <p>Sensibilizar os alunos e a comunidade escolar sobre os efeitos da discriminação e do preconceito no ambiente escolar.</p>
+      <h3>Objectivos específicos</h3>
+      <ul>
+        <li>Identificar os diferentes tipos de discriminação.</li>
+        <li>Explicar as causas do preconceito na escola.</li>
+        <li>Conhecer as consequências para os alunos.</li>
+        <li>Promover o respeito pelas diferenças.</li>
+        <li>Apresentar soluções para combater a discriminação.</li>
+      </ul>
+    </section>
+
+    <section id="desenvolvimento">
+      <h2>3. Desenvolvimento</h2>
+      <h3>3.1. O que é discriminação?</h3>
+      <p>É o tratamento injusto ou desigual dado a uma pessoa por causa das suas características, origem, religião, condição económica, deficiência ou outras diferenças.</p>
+      <h3>3.2. O que é preconceito?</h3>
+      <p>É uma opinião ou julgamento formado antecipadamente sobre uma pessoa ou grupo, sem conhecer verdadeiramente essa pessoa.</p>
+      <h3>3.3. Tipos de discriminação no ambiente escolar</h3>
+      <div class="grid">
+        <article class="item"><h3>Discriminação racial</h3><p>Tratar alguém de forma injusta devido à cor da pele ou à sua origem.</p></article>
+        <article class="item"><h3>Discriminação económica</h3><p>Excluir alunos por serem pobres ou por não possuírem determinados materiais.</p></article>
+        <article class="item"><h3>Discriminação religiosa</h3><p>Desrespeitar alguém pelas suas crenças ou práticas religiosas.</p></article>
+        <article class="item"><h3>Discriminação física</h3><p>Gozar, humilhar ou rejeitar alguém pela sua aparência ou características físicas.</p></article>
+        <article class="item"><h3>Discriminação por deficiência</h3><p>Impedir ou dificultar a participação de alunos com deficiência nas actividades escolares.</p></article>
+        <article class="item"><h3>Discriminação de género</h3><p>Tratar alguém de forma desigual por ser rapaz ou rapariga.</p></article>
+      </div>
+      <h3>3.4. Causas da discriminação</h3>
+      <ul>
+        <li>Falta de educação sobre o respeito pelas diferenças.</li>
+        <li>Influência negativa de familiares, colegas ou da sociedade.</li>
+        <li>Falta de empatia e de tolerância.</li>
+        <li>Desigualdades sociais e económicas.</li>
+        <li>Falta de sensibilização e de regras claras na escola.</li>
+      </ul>
+      <h3>3.5. Consequências</h3>
+      <ul>
+        <li>Baixa autoestima e perda de confiança.</li>
+        <li>Isolamento social e dificuldades de convivência.</li>
+        <li>Medo de participar nas aulas.</li>
+        <li>Dificuldades de aprendizagem.</li>
+        <li>Conflitos entre estudantes e possível abandono escolar.</li>
+      </ul>
+    </section>
+
+    <section id="solucoes">
+      <h2>4. Soluções e medidas de prevenção</h2>
+      <ul>
+        <li>Promover campanhas de sensibilização sobre igualdade e respeito.</li>
+        <li>Ensinar os alunos a respeitar as diferenças.</li>
+        <li>Realizar palestras e debates sobre inclusão.</li>
+        <li>Criar e aplicar regras contra a discriminação.</li>
+        <li>Incentivar a amizade, a cooperação e a união entre colegas.</li>
+        <li>Comunicar situações de discriminação aos professores ou à direcção.</li>
+        <li>Garantir que todos os alunos possam participar nas actividades escolares.</li>
+      </ul>
+    </section>
+
+    <section id="recomendacoes">
+      <h2>5. Recomendações</h2>
+      <div class="grid">
+        <article class="item"><h3>Aos alunos</h3><ul><li>Respeitar todos os colegas.</li><li>Não julgar ninguém pela aparência ou condição social.</li><li>Apoiar colegas que enfrentam discriminação.</li></ul></article>
+        <article class="item"><h3>Aos professores</h3><ul><li>Tratar todos os alunos com igualdade.</li><li>Intervir perante atitudes preconceituosas.</li><li>Promover a inclusão na sala de aulas.</li></ul></article>
+        <article class="item"><h3>À direcção da escola</h3><ul><li>Adoptar medidas contra a discriminação.</li><li>Organizar campanhas educativas.</li><li>Promover um ambiente escolar seguro e inclusivo.</li></ul></article>
+        <article class="item"><h3>Às famílias</h3><ul><li>Ensinar o respeito desde casa.</li><li>Dialogar com os filhos sobre convivência.</li><li>Cooperar com a escola na resolução de conflitos.</li></ul></article>
+      </div>
+    </section>
+
+    <section id="conclusao">
+      <h2>6. Conclusão</h2>
+      <p>A discriminação e o preconceito no ambiente escolar são problemas que afectam negativamente a vida dos estudantes e o processo de ensino e aprendizagem.</p>
+      <p>É necessário que alunos, professores, encarregados de educação e direcção trabalhem juntos para construir uma escola baseada no respeito, na igualdade, na solidariedade e na inclusão.</p>
+      <div class="quote">“Todos somos diferentes, mas todos temos os mesmos direitos!”</div>
+    </section>
+
+    <section id="referencias">
+      <h2>7. Referências bibliográficas</h2>
+      <ul>
+        <li>Constituição da República de Moçambique.</li>
+        <li>UNESCO — materiais sobre educação inclusiva e igualdade.</li>
+        <li>UNICEF — materiais sobre direitos da criança e educação.</li>
+        <li>Declaração Universal dos Direitos Humanos (1948).</li>
+      </ul>
+      <p><small>Nota: antes da entrega, acrescentem os títulos exactos, autores, datas e endereços das fontes que consultarem efectivamente.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Escola para Todos</strong></p>
+    <p>Respeitar as diferenças é construir um futuro melhor.</p>
+  </footer>
+</body>
+</html>
